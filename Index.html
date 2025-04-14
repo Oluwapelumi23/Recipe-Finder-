@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Meal Creativity</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header">
+        <div class="flex-header">
+          <div class="logo">
+            <h1>MealCreativity</h1>
+          </div>
+          <div class="nav-bar">
+            <ul>
+              <li>Home</li>
+              <li>Features</li>
+              <li>Recipes</li>
+            </ul>
+          </div>
+          <div class="sign-up">
+            <button class="btn--l">Login</button>
+            <button class="btn--s">Sign Up</button>
+          </div>
+        </div>
+
+        <div class="Bars">
+          <i class="fa-solid fa-bars" id="fa-bars"></i>
+        </div>
+      </div>
+      <div class="hero-page">
+        <div class="content-container">
+          <div class="texts">
+            <h1>Hungry? Let's Find Your Next Meal</h1>
+            <p>Don't know what you should cook today? We've got your back</p>
+          </div>
+          <div class="form">
+            <form action="">
+              <input
+                type="text"
+                name="text"
+                id="input-field"
+                placeholder="Search any recipe, cuisine or dish name"
+              />
+              <button class="btn-btn" id="btn-btn">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <ul class="Search-result-section" id="Search-result-section">
+        <!-- <div class="recipe-card" id="recipe-card">
+          <img class="api-img"
+            src="./image3.jpg"
+            alt=""
+            class="meal-picture"
+            id="meal-picture"
+          />
+          <div class="bottom-content">
+            <div class="name-rate">
+              <h3 id="meal-name">Chicken</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <span>4.5</span>
+              </div>
+            </div>
+            <div class="minute-reaction">
+              <div class="minute">
+                <i class="fa-regular fa-clock"></i><span>30 minutes</span>
+              </div>
+              <div class="reaction">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </ul>
+        
+        <!--Modal Section-->
+        <div class="modal visible" id="modal">
+          <div class="modal-content" id="modal-content">
+            <div class="modal-content--2">
+              <span class="close" id="close">&times;</span>
+              <h2 id="modal-meal-name"></h2>
+              <img id="modal-meal-image" src="" alt="Meal Image">
+              
+              <h3>Instructions:</h3>
+              <p id="modal-instructions"></p>
+            </div>
+            <div class="Ingredients">
+              <h3>Ingredients:</h3>
+              <ul id="modal-ingredients-list"></ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-2 visible" id="modal-2">
+          <div class="modal-content-2" id="modal-content-2">
+            <div class="x-bar" id="x-bar"><i class="fa-solid fa-xmark"></i></div>
+            <div class="nav-bar-modal">
+              <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>Recipes</li>
+              </ul>
+            </div>
+            <div class="sign-up-modal">
+              <button class="btn--l-modal">Login</button>
+              <button class="btn--s-modal">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+          <!-- Random Search Section -->
+         <div class="random-search" id="random-search">
+            <div class="trendy">
+              <h2>Trendy <span>Recipes</span></h2>
+              <button class="btn" id="btn">View More</button>
+            </div>
+            <ul class="random-search-card" id="random-search-card">
+              <!-- <div class="recipe-card" id="recipe-card">
+                <img class="api-img"
+                  src="./image3.jpg"
+                  alt=""
+                  class="meal-picture"
+                  id="meal-picture"
+                />
+                <div class="bottom-content">
+                  <div class="random-name">
+                    <h3 id="meal-name">Chicken</h3>
+                  </div>
+                  <div class="random-ingredients">
+                    <p id="random-ingredients">Description: </p>
+                  </div>
+                </div> -->
+              </ul>
+          </div> 
+         
+          <!-- Recipe Blog Section -->
+          <div class="recipe-blog-section">
+            <div class="trendy recipe-blog">
+              <h2>Recipe Blog</h2>
+              <button class="btn" id="btn">View More</button>
+            </div>
+            <div class="recipe-blog-flex">
+              
+                <div class="first-blog">
+                  <img class="blog-img1" src="./image4.jpg" alt="">
+                  <div class="text1">
+                    <span>April 09, 2025</span>
+                    <h3>Our Recipe Blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex minima exercitationem sequi facilis vero, corrupti ipsa cupiditate?</p>
+                  </div>
+                  
+                </div>
+                <div class="second-blog">
+                  <div class="blog-card">
+                    <img class="blog-img2" src="./image5.jpg" alt="">
+                    <div class="text2">
+                      <span>April 09, 2025</span>
+                      <h3>Our Recipe Blog</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,</p>
+                    </div>
+                  </div>
+  
+                  <div class="blog-card">
+                    <img class="api-img3" src="./image6.jpg" alt="">
+                    <div class="text2">
+                      <span>April 09, 2025</span>
+                      <h3>Our Recipe Blog</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,</p>
+                    </div>
+                  </div>
+  
+                  <div class="blog-card">
+                    <img class="api-img4" src="./image7.jpg" alt="">
+                    <div class="text2">
+                      <span>April 09, 2025</span>
+                      <h3>Our Recipe Blog</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,</p>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+          <!-- Newletter Section -->
+          <div class="newsletter-section">
+            <h2>Subscribe to our newsletter</h2>
+            <p>subscribe to our newsletter and receive 15% discount</p>
+            <form action="" class="newsletter-input">
+              <input type="text" name="text" placeholder="yourmail@gmail.com">
+              <button>Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Popular Ingredients Section -->
+          <div class="popularIngre">
+            <h2>Check Our Ingredients</h2>
+            <div class="flex-ingre">
+              <div class="flex-ingre-2">
+                <img src="./image9.jpg" alt="">
+                <p>TOFU</p>
+              </div>
+              <div class="flex-ingre-2">
+                <img src="./image10.jpg" alt="">
+                <p>BEEF</p>
+              </div>
+              <div class="flex-ingre-2">
+                <img src="./image11.jpg" alt="">
+                <p>EGGS</p>
+              </div>
+              <div class="flex-ingre-2">
+                <img src="./image12.jpg" alt="">
+                <p>GREEN-PEAS</p>
+              </div>
+              <div class="flex-ingre-2">
+                <img src="./image13.jpg" alt="">
+                <p>LENTILS</p>
+              </div>
+              <div class="flex-ingre-2">
+                <img src="./image14.jpg" alt="">
+                <p>CHICKEN</p>
+              </div>
+              <div class="flex-ingre-2">
+                <img src="./image15.jpg" alt="">
+                <p>FISH</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+           <div class="footer-section">
+            <div class="footer-logo">
+              <h1>MealCreativity</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatem quas temporibus!</p>
+            </div>
+
+            <div class="handles">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <div class="footer-ul">
+              <ul>
+                <li>Recipes</li>
+                <li>Learn/How to</li>
+                <li>Seasonal Sensation</li>
+                <li>Shop</li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p>Copyright.2025</p>
+              <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            
+           </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
