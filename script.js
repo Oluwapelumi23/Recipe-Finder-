@@ -90,7 +90,7 @@ searchButton.addEventListener("click", async function (event) {
 
           ingredients.push(`<li>${ingredient}    ${measure}</li>`)
         }) 
-
+      
         document.getElementById("modal-ingredients-list").innerHTML = ingredients.join("");
         
 
