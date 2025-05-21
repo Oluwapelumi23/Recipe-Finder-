@@ -11,6 +11,11 @@ let randomSearchCard = document.getElementById("random-search-card")
 let randomSearch = document.getElementById("random-search")
 let faBars = document.getElementById("fa-bars")
 let xBar = document.getElementById("x-bar")
+let logo = document.getElementById("logo")
+
+logo.addEventListener("click", function(){
+  location.reload();
+})
 
 searchButton.addEventListener("click", async function (event) {
   event.preventDefault();
