@@ -11,10 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   width: 100%;
   height: auto;
-}
+} */
 
 .main-container {
   width: 100%;
@@ -856,6 +856,15 @@ span {
     border-radius: 0.3rem;
     color: #fff;
   }
+
+  .newsletter-section {
+    width: 100%;
+    height: auto;
+    padding: 8rem 6rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./image1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   
 
 }
@@ -863,7 +872,7 @@ span {
 @media screen and (max-width: 550px){
 
   body {
-    width: 150%;
+    width: 110%;
     height: auto;
   }
 
@@ -1012,6 +1021,11 @@ span {
     padding: 1rem 0;
   }
 
+  .nav-bar-modal ul li a{
+    text-decoration: none;
+    color: #000;
+  }
+
   .btn--l-modal {
     width: fit-content;
     height: auto;
@@ -1037,6 +1051,17 @@ span {
     color: orangered;
     font-weight: bold;
   }
+
+  .newsletter-section {
+    width: 100%;
+    height: auto;
+    padding: 6rem 3rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./image1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+
 
 }
 
