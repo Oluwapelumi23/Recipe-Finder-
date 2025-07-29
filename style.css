@@ -872,7 +872,7 @@ span {
 @media screen and (max-width: 550px){
 
   body {
-    width: 110%;
+    width: 140%;
     height: auto;
   }
 
@@ -1060,8 +1060,6 @@ span {
     background-size: cover;
     background-position: center;
   }
-  
-
 
 }
 
